@@ -1,0 +1,18 @@
+<div *ngIf="hero">
+    <h2>{{hero.name | uppercase}} Details</h2>>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+        <img src="" alt="{{hero.name}}" width="500" height="333">
+    </div>
+    <div>
+        <label for="hero-name">Hero name: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    <div>
+        <span></span>
+    </div>
+</div>
+<button type="button" (click)="goBack()">go back</button>
+<button type="button" (click)="save()">save</button>
+
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
